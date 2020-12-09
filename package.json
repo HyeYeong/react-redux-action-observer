@@ -1,6 +1,7 @@
 {
   "name": "react-redux-action-observer",
   "version": "0.1.0",
+  "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {},
   "peerDependencies": {
@@ -42,6 +43,11 @@
     "link": "npm link && npm link react-redux-action-observer",
     "unlink": "npm link react-redux-action-observer && npm unlink"
   },
+  "files": [
+    "lib/",
+    "src/",
+    "README.md"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
