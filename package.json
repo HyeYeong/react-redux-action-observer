@@ -1,7 +1,6 @@
 {
   "name": "react-redux-action-observer",
   "version": "0.1.0",
-  "private": true,
   "main": "lib/index.js",
   "dependencies": {},
   "peerDependencies": {
