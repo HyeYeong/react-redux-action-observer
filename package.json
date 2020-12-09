@@ -1,7 +1,7 @@
 {
   "name": "react-redux-action-observer",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {},
   "peerDependencies": {
@@ -39,9 +39,17 @@
     "eject": "react-scripts eject",
     "build-package": "rollup -c",
     "watch-package": "rollup -c -w",
-    "link-package": "npm link react-redux-action-observer",
-    "link": "npm link && npm link react-redux-action-observer",
-    "unlink": "npm link react-redux-action-observer && npm unlink"
+    "link-package": "npm link && npm link react-redux-action-observer",
+    "unlink-package": "npm unlink react-redux-action-observer && npm unlink"
+  },
+  "files": [
+    "lib/",
+    "src/",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z0BI7z/react-redux-action-observer.git"
   },
   "eslintConfig": {
     "extends": [
