@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-redux-action-observer/static/css/main.7d85b8df.chunk.css",
+    "main.js": "/react-redux-action-observer/static/js/main.2e5ce6f2.chunk.js",
+    "main.js.map": "/react-redux-action-observer/static/js/main.2e5ce6f2.chunk.js.map",
+    "runtime-main.js": "/react-redux-action-observer/static/js/runtime-main.960eec11.js",
+    "runtime-main.js.map": "/react-redux-action-observer/static/js/runtime-main.960eec11.js.map",
+    "static/js/2.bcd58a9e.chunk.js": "/react-redux-action-observer/static/js/2.bcd58a9e.chunk.js",
+    "static/js/2.bcd58a9e.chunk.js.map": "/react-redux-action-observer/static/js/2.bcd58a9e.chunk.js.map",
+    "static/js/3.61e5909b.chunk.js": "/react-redux-action-observer/static/js/3.61e5909b.chunk.js",
+    "static/js/3.61e5909b.chunk.js.map": "/react-redux-action-observer/static/js/3.61e5909b.chunk.js.map",
+    "index.html": "/react-redux-action-observer/index.html",
+    "static/css/main.7d85b8df.chunk.css.map": "/react-redux-action-observer/static/css/main.7d85b8df.chunk.css.map",
+    "static/js/2.bcd58a9e.chunk.js.LICENSE.txt": "/react-redux-action-observer/static/js/2.bcd58a9e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.960eec11.js",
+    "static/js/2.bcd58a9e.chunk.js",
+    "static/css/main.7d85b8df.chunk.css",
+    "static/js/main.2e5ce6f2.chunk.js"
+  ]
+}
