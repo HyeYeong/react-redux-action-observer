@@ -4,7 +4,7 @@ Respond to redux actions within components.
 
 ## Usage
 
-`useActionObserver()` is a hook that runs a callback whenever specific actions are dispatched.
+The `useActionObserver()` hook allows you to fire a callback (which receives the action) whenever specific actions are dispatched.
 
 ```javascript
 // LoginObserver.jsx
@@ -21,8 +21,7 @@ const LoginObserver = ({ children }) => {
         alert('Failed to login!');
       }
     },
-    ['LOGIN_SUCCESS', 'LOGIN_FAILURE'] // callback will only run if action.type is included in the dependency array
-    // The callback passed to useActionObserver will not run if action.type === 'LOGIN_UNKNOWN'.
+    ['LOGIN_SUCCESS', 'LOGIN_FAILURE'] // callback will only run if action.type is included in the dependency array, i.e. this specific callback will not run if action.type === 'LOGIN_UNKNOWN'
   );
 
   return <React.Fragment>{children}</React.Fragment>;
@@ -35,13 +34,13 @@ const LoginObserver = ({ children }) => {
 // store.js
 import { createStore, applyMiddleware } from 'redux';
 import { ActionObservable } from 'react-redux-action-observer';
-import anyReducer from './anyReducer.js';
+import anyReducer from './anyReducer';
 
 export const actionObservable = new ActionObservable();
 
 export const store = createStore(
   anyReducer,
-  applyMiddleware(actionObservable.createMiddleware()) // createMiddleware() returns a redux Middleware
+  applyMiddleware(actionObservable.createMiddleware()) // .createMiddleware() returns a redux Middleware
 );
 ```
 
@@ -49,7 +48,7 @@ You can `subscribe` callbacks to the `ActionObservable` object directly. This re
 
 ```javascript
 // dummyObserver.js
-import { actionObservable } from './store.js';
+import { actionObservable } from './store';
 
 // the subscribed callback will run for every action
 const unsubscribe = actionObservable.subscribe((action) => {
